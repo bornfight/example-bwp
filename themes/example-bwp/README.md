@@ -1,18 +1,70 @@
+<a href="http://www.bornfight.com">
+<img width="84px" src="https://www.bornfight.com/wp-content/themes/bf/static/ui/BF-sign-dark.svg?" title="Bornfight" alt="Bornfight">
+</a>
+
+
 # example-bwp
-Useful stuff related to the project for faster start and setup of "everything".
-___
-### 🚀 WP Stuff
-Run Composer Install after creating the project with BWP builder
 
-### 🚀 Generate front-end folder/files structure
-After creating the project with BWP builder, use our [b-creative](https://github.com/bornfight/b-creative) Yeoman generator to scaffold all that's needed to start working on the project. 
-
-___
-### 🎯 Project specific stuff
-All stuff that supports the project — e.g. DB, uploads, plugins...
-#### 💾 Drive folder
-Latest exported database, uploads, plugins...
-#### 📦 Other
-Stuff regarding project management, client assets, design assets...
+> Project short description
 
 
+## Table of Contents
+
+> If your `README` has a lot of info, section headers might be nice.
+
+- [Installation](#installation)
+- [Features](#features)
+- [Usage](#usage)
+- [FAQ](#faq)
+- [Support](#support)
+- [License](#license)
+
+
+---
+
+## Installation
+
+- step 1
+- step 2 with code
+```shell
+$ brew update
+$ brew install fvcproductions
+```
+- step 3
+
+## Features
+
+## Usage
+
+---
+
+## Contributing
+
+> To get started...
+
+---
+
+
+## FAQ
+
+- **Q: question 1**
+    - answer 1
+
+- **Q: question 2**
+    - answer 2
+
+---
+
+## Support
+
+Reach out to us:
+
+- email <a href="mailto: frontend@bornfight.com" target="_blank">`frontend@bornfight.com`</a>
+
+
+## License
+
+[![License](http://img.shields.io/:license-mit-blue.svg?style=flat-square)](http://badges.mit-license.org)
+
+- **[MIT license](http://opensource.org/licenses/mit-license.php)**
+- Copyright 2020 © <a href="https://www.bornfight.com" target="_blank">Bornfight</a>.
