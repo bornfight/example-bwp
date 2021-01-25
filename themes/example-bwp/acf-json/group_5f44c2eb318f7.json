@@ -1,0 +1,370 @@
+{
+    "key": "group_5f44c2eb318f7",
+    "title": "Quote Module",
+    "fields": [
+        {
+            "key": "field_5f44c2f88f749",
+            "label": "Show",
+            "name": "show",
+            "type": "true_false",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "wpml_cf_preferences": 3,
+            "message": "",
+            "default_value": 0,
+            "ui": 1,
+            "ui_on_text": "",
+            "ui_off_text": ""
+        },
+        {
+            "key": "field_5f44c3858f74a",
+            "label": "Title",
+            "name": "title",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "wpml_cf_preferences": 2,
+            "acfe_permissions": "",
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_5f44c38a8f74b",
+            "label": "Quote",
+            "name": "quote",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "wpml_cf_preferences": 2,
+            "acfe_permissions": "",
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_5f44c3918f74c",
+            "label": "Author",
+            "name": "author",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "wpml_cf_preferences": 2,
+            "acfe_permissions": "",
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_5f44c3968f74d",
+            "label": "Author Company",
+            "name": "author_company",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "wpml_cf_preferences": 2,
+            "acfe_permissions": "",
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_5f44c3a18f74e",
+            "label": "CTA Link",
+            "name": "cta_link",
+            "type": "radio",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "wpml_cf_preferences": 3,
+            "choices": {
+                "none": "None",
+                "internal_link": "Internal Link",
+                "external_link": "External Link",
+                "anchor": "Anchor"
+            },
+            "allow_null": 0,
+            "other_choice": 0,
+            "default_value": "",
+            "layout": "horizontal",
+            "return_format": "value",
+            "save_other_choice": 0
+        },
+        {
+            "key": "field_5f92d7510c964",
+            "label": "Internal Link",
+            "name": "internal_link",
+            "type": "post_object",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5f44c3a18f74e",
+                        "operator": "==",
+                        "value": "internal_link"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "wpml_cf_preferences": 3,
+            "post_type": [
+                "page"
+            ],
+            "taxonomy": "",
+            "allow_null": 0,
+            "multiple": 0,
+            "return_format": "object",
+            "save_custom": 0,
+            "save_post_status": "publish",
+            "acfe_bidirectional": {
+                "acfe_bidirectional_enabled": "0"
+            },
+            "ui": 1
+        },
+        {
+            "key": "field_5f92d76c0c965",
+            "label": "External Link",
+            "name": "external_link",
+            "type": "url",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5f44c3a18f74e",
+                        "operator": "==",
+                        "value": "external_link"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "wpml_cf_preferences": 3,
+            "acfe_permissions": "",
+            "default_value": "",
+            "placeholder": ""
+        },
+        {
+            "key": "field_5ff42434c0ee0",
+            "label": "Add TP to URL",
+            "name": "add_tp_to_url",
+            "type": "true_false",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5f44c3a18f74e",
+                        "operator": "==",
+                        "value": "external_link"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "wpml_cf_preferences": 3,
+            "message": "",
+            "default_value": 0,
+            "ui": 1,
+            "ui_on_text": "",
+            "ui_off_text": ""
+        },
+        {
+            "key": "field_5f92d7360c963",
+            "label": "CTA Link Label",
+            "name": "cta_link_label",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5f44c3a18f74e",
+                        "operator": "!=",
+                        "value": "none"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "wpml_cf_preferences": 2,
+            "acfe_permissions": "",
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_5f933ea739c77",
+            "label": "Anchor To Module",
+            "name": "anchor_to_module",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5f44c3a18f74e",
+                        "operator": "==",
+                        "value": "internal_link"
+                    }
+                ],
+                [
+                    {
+                        "field": "field_5f44c3a18f74e",
+                        "operator": "==",
+                        "value": "anchor"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "wpml_cf_preferences": 3,
+            "choices": {
+                "none": "None",
+                "about_team_module": "About Team Module",
+                "awards_section_module": "Awards Section Module",
+                "benefits_module": "Benefits Module",
+                "benefits_tile_module": "Benefits Tile Module",
+                "career_list_module": "Careers List Module",
+                "charity_blog_section_module": "Charity Blog Section Module",
+                "charity_contact_us_module": "Charity Contact us Module",
+                "charity_header_module": "Charity Header Module",
+                "charity_helping_local_module": "Charity Helping Local Module",
+                "charity_image_slider_module": "Charity Image Slider Module",
+                "charity_map_module": "Charity Map Module",
+                "charity_numbers_module": "Charity Numbers Module",
+                "charity_quote_module": "Charity Quote Module",
+                "contact_us_module": "Contact us Module",
+                "facts_slider_module": "Facts Slider Module",
+                "full_image_module": "Full Image Module",
+                "header_module": "Header Module",
+                "headquarters_module": "Headquarters Module",
+                "hero_video_module": "Hero video Module",
+                "home_header_module": "Home header Module",
+                "home_header_fitline_module": "Home header FitLine Module",
+                "home_partners_module": "Home partners Module",
+                "home_success_stories_module": "Home success stories Module",
+                "image_content_module": "Image Content Module",
+                "instagram_module": "Instagram Module",
+                "intro_module": "Intro Module",
+                "join_us_slider_module": "Join us slider Module",
+                "key_figures_module": "Key Figures Module",
+                "map_module": "Map module",
+                "masonry_gallery_module": "Masonry Gallery Module",
+                "media_assets_module": "Media Assets Module",
+                "media_featured_module": "Media Featured Module",
+                "media_representative_module": "Media Representative Module",
+                "news_slider_module": "News Slider Module",
+                "numbers_about_module": "Numbers About Module",
+                "ntsc_video_module": "NTC Video Module",
+                "our_values_module": "Our Values Module",
+                "press_coverage_featured_module": "Press Coverage Featured Module",
+                "quote_image_module": "Quote Image Module",
+                "quote_module": "Quote Module",
+                "sports_section_module": "Sports Section Module",
+                "steps_module": "Steps Module",
+                "stories_list_module": "Stories List Module",
+                "slider_module": "Slider Module",
+                "team_images_module": "Team Images Module"
+            },
+            "default_value": false,
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "return_format": "value",
+            "ajax": 0,
+            "placeholder": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "post"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "left",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": false,
+    "description": "",
+    "acfe_display_title": "",
+    "acfe_autosync": [
+        "php",
+        "json"
+    ],
+    "acfe_form": 0,
+    "acfe_meta": "",
+    "acfe_note": "",
+    "modified": 1611568615,
+    "acfe_categories": {
+        "modules": "Modules"
+    }
+}
