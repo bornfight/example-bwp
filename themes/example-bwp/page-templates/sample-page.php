@@ -19,6 +19,11 @@ get_partial( 'layout/navigation' );
 		get_partial( 'news/list' );
 		get_partial( 'articles/list' );
 		?>
+
+        <a href="<?= get_permalink( 42 ); ?>" class="js-modal-trigger" data-post-data-id="<?= 42; ?>"
+           data-return-url="<?= get_permalink(); ?>">
+            This is a test page Link
+        </a>
     </div>
     <!-- //PAGE CONTENT -->
 
