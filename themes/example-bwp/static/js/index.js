@@ -15,6 +15,7 @@ import GridHelper from "./helpers/GridHelper";
  */
 import NavigationController from "./components/NavigationController";
 import Dummy from "./components/Dummy";
+import ModalController from "./components/ModalController";
 
 /**
  * Check if document is ready cross-browser
@@ -88,4 +89,7 @@ ready(() => {
      */
     const navigation = new NavigationController();
     navigation.init();
+
+    const modalController = new ModalController();
+    modalController.init();
 });

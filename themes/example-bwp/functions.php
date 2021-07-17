@@ -1,5 +1,6 @@
 <?php
 
+use exampleBwp\config\AdvancedImagesConfig;
 use exampleBwp\core\CustomPostTypes;
 use exampleBwp\core\CustomPostTypeTaxonomies;
 use exampleBwp\core\ThemeOptions;
@@ -41,8 +42,7 @@ require_once __DIR__ . '/vendor/autoload.php';
 
 if ( class_exists( 'exampleBwp\core\ThemeUpdateChecker' ) ) {
 	//Initialize the update checker.
-	$example_update_checker = new ThemeUpdateChecker(
-		'example-bwp',                                            //Theme folder name, AKA "slug".
+	$example_update_checker = new ThemeUpdateChecker( 'example-bwp',                                            //Theme folder name, AKA "slug".
 		'https://service.bwp.zone/?identifier=c8a11ddfe94449906a4284053e807aa2&type=manifest' //URL of the metadata file.
 	);
 
@@ -77,6 +77,9 @@ $rewrite_rules->register();
 
 $acf_defaults = new AcfDefaults();
 $acf_defaults->init();
+
+$advanced_images_config = new AdvancedImagesConfig();
+$advanced_images_config->init();
 
 /**
  * Pretty dump

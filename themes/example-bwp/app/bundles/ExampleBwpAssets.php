@@ -20,7 +20,7 @@ class ExampleBwpAssets extends AssetBundle
 	$this->js = [
 		'exampleBwpVendor' => [
 			'path'     => 'dist/vendor.js',
-			'version'  => 1.0,
+			'version'  => 1.1,
 			'localize' => [
 				'object' => 'frontend_rest_object',
 				'data'   => [
@@ -30,7 +30,7 @@ class ExampleBwpAssets extends AssetBundle
 		],
 		'exampleBwpBundle' => [
 			'path'    => 'dist/bundle.js',
-			'version' => 1.0
+			'version' => 1.1
 		],
 	];
 
@@ -38,7 +38,7 @@ class ExampleBwpAssets extends AssetBundle
 		'exampleBwpMainCSS' => [
 			'path'      => 'dist/style.css',
 			'in_footer' => false,
-			'version'   => 1.0
+			'version'   => 1.1
 		],
 	];
 }
